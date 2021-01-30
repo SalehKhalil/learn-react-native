@@ -7,7 +7,17 @@ const Auth = createStackNavigator();
 
 const AuthRoutes = () => (
     <Auth.Navigator screenOptions={{
-        headerShown: false,
+        headerTintColor: '#fff',
+        headerTitleAlign: 'center',
+        headerTitleStyle: {
+            fontWeight: 'bold',
+        },
+        headerStyle: {
+            backgroundColor: '#312e38',
+        },
+        cardStyle: {
+            backgroundColor: '#312e35'
+        },
     }}>
         <Auth.Screen
             name='Login'
